@@ -1,0 +1,120 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: red;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+.hero {
+  background-image: url('https://i.imgur.com/qnRDuYt.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.series-section {
+  padding: 40px 30px;
+}
+
+.series-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.series-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.series-card {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.series-card img {
+  width: 100%;
+  border-radius: 6px;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.series-card p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.series-card:hover {
+  transform: scale(1.05);
+}
